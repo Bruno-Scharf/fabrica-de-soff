@@ -1,0 +1,80 @@
+/*body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        to top right, 
+        #2C003E 10%,  
+        #3B006F 30%,  
+        #1A1A40 50%,  
+        #00072D 70%,  
+        #000000 100%  
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}*/ 
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        to top right, 
+        #4B0082 10%,  /* Índigo escuro */
+        #8A2BE2 40%,  /* Violeta */
+        #BA55D3 70%,  /* Orquídea média */
+        #FFFFFF 100%  /* Branco */
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Para empurrar o conteúdo para cima */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espaço acima da barra de pesquisa */
+}
+
+.search-bar {
+    width: 550px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Adicionei 'solid' para definir o tipo de borda */
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    border-color: #007BFF; 
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3; 
+}
+
+.content {
+    text-align: center;
+    color: white; 
+    margin-top: 30px; 
+}
+
+h1, p {
+    margin: 0;
+}
