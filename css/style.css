@@ -24,8 +24,6 @@ body {
         #000 100%
     );
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Para empurrar o conteúdo para cima */
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -68,26 +66,21 @@ body {
     background-color: #0056b3; 
 }
 
-.content {
-    text-align: center;
-    color: white; 
-    margin-top: 30px; 
-    
-}
 
 h1, p {
     margin: 0;
 }
 .content-pai {
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
+    justify-content: center;
     gap: 20px;
     align-items: center;
 }
 .content-filho {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    
 }
 .card {
     background-image: linear-gradient(
@@ -98,8 +91,9 @@ h1, p {
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 50px;
-    width: 100px;
+    width: 120px;
     text-align: center;
+    
 }
 .card h1 {
     font-size: 16px;
