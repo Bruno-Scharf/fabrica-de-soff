@@ -122,35 +122,13 @@ p{
 }
 .card button {
     padding: 5px 10px;
-    background-color: #00ff40;
+    background-color: #00ff80;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.content-lateral {
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color:rgba(0, 0, 0, 0.44);
-    padding-top: 100px;
-    }
-.content-lateral button {
-    display: flex;
-    justify-content: center;
-    margin: 10px none;
-    width: 150px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 50%);
-    color: white;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-}
 
     
 @media (max-width: 768px){ 
@@ -177,15 +155,13 @@ p{
     
 .titulo {
     text-align: center;
-    color:#000;
+    color:aliceblue;
     font-size: 15px;
-    margin-top: 400px;
-    margin-right: 100px;
+    margin-right: 350px;
 }
 .filtros{
     display: flex;
     gap: 20px;
-    justify-content: center;
     text-align: center;
     margin-left: 200px;
     margin-top: 10px;
@@ -193,4 +169,117 @@ p{
     height: 100%;
     box-sizing: border-box;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.filtros-filhos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.car{
+    background-image: linear-gradient(
+        to bottom, 
+        #a71aa7,
+        #000 100%
+    );
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+.filtros-titulos{  
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 15px;
+    margin-right: 350px;
+    
+}
+.car h1 {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.car button {
+    padding: 5px 10px;
+    background-color: #00ff80;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.n{
+    color: aliceblue;
+}
+.nome{
+    color: #FFFFFF;
+}
+
+.img-car {
+    margin-bottom: 10px;
+}
+
+.img-car img {
+    width: 80px; /* Tamanho da imagem */
+    height: 80px; /* Tamanho da imagem */
+    border-radius: 50%; /* Formato circular */
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+.content-lateral {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o botão em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza texto dentro do botão */
+    margin: 20px; /* Espaço externo */
+}
+
+.content-lateral img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.content-lateral button {
+    margin-top: 10px; /* Espaço entre a imagem e o botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
+
+.content-lateral button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+.content-lateral {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.44);
+    padding-top: 100px;
+    }
+.content-lateral button {
+    display: flex;
+    justify-content: center;
+    margin: 10px none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 }
