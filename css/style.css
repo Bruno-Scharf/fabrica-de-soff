@@ -53,16 +53,21 @@ body {
 }
 
 .search-container button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    margin-top: 45px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    font-size: 16px;  
-    
+    padding: 10px 10px; /* Ajuste o padding para tornar o botão mais compacto */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    margin-top: 50px; /* Mantém a margem superior igual à da barra de pesquisa */
+    border: none; /* Remove a borda padrão */
+    border-radius: 0 40px 40px 0; /* Bordas arredondadas apenas à direita */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte do botão */
 }
+
+.search-container button img {
+    width: 15px; /* Define a largura da imagem da lupa */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 
 .search-container button:hover {
     background-color: #0056b3; 
@@ -102,6 +107,7 @@ p{
     
 }
 .card {
+    text-align: center;
     background-image: linear-gradient(
         to bottom, 
         #a71aa7,
@@ -110,9 +116,11 @@ p{
     border: 3px solid #000;
     border-radius: 20px;
     padding: 50px;
-    width: 120px;
     text-align: center;
-    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
 
     
 }
@@ -144,14 +152,7 @@ p{
     } 
 }
 
-.content-lateral img{
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 3px solid #35424a;
-    }
+
     
 .titulo {
     text-align: center;
@@ -160,8 +161,11 @@ p{
     margin-right: 350px;
 }
 .filtros{
+    align-items: center;
+    margin: 20px;
     display: flex;
     gap: 20px;
+    justify-content: center;
     text-align: center;
     margin-left: 200px;
     margin-top: 10px;
@@ -169,9 +173,7 @@ p{
     height: 100%;
     box-sizing: border-box;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    
 }
 
 .filtros-filhos{
@@ -227,59 +229,50 @@ p{
 }
 
 .img-car img {
-    width: 80px; /* Tamanho da imagem */
-    height: 80px; /* Tamanho da imagem */
-    border-radius: 50%; /* Formato circular */
-    object-fit: cover; /* Para manter a proporção da imagem */
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
 .content-lateral {
     display: flex;
-    flex-direction: column; /* Coloca a imagem e o botão em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    text-align: center; /* Centraliza texto dentro do botão */
-    margin: 20px; /* Espaço externo */
-}
-
-.content-lateral img {
-    max-width: 100%; /* Imagem responsiva */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.content-lateral button {
-    margin-top: 10px; /* Espaço entre a imagem e o botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mão ao passar o mouse */
-}
-
-.content-lateral button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
-}
-
-.content-lateral {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; /* Alinha os elementos para o topo */
+    text-align: center; 
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
     height: 100%;
     width: 300px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color:rgba(0, 0, 0, 0.44);
-    padding-top: 100px;
-    }
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+.content-lateral img {
+    max-width: 100%; /* Ajusta para ocupar toda a largura disponível */
+    height: auto; 
+    margin: 0; /* Remove a margem externa */
+    border-radius: 50%; /* Mantém o arredondamento */
+    border: 3px solid #35424a; /* Borda da imagem */
+    margin-top: 20px; /* Ajusta a posição da imagem a partir do topo */
+}
+
 .content-lateral button {
-    display: flex;
-    justify-content: center;
-    margin: 10px none;
-    width: 150px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 50%);
-    color: white;
-    border: none;
-    text-align: center;
-    cursor: pointer;
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 150px; /* Largura do botão */
+    align-self: center; /* Centraliza o botão horizontalmente */
+    margin-top: 200px;
+}
+
+.content-lateral button:hover {
+    background-color: #45a049; 
 }
