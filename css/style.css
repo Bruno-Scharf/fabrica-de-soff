@@ -29,19 +29,25 @@ body {
     
 }
 
-.search-container {
+.pesquisa-conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-left: 50px;
+    
 }
-
-.search-bar {
+.pi{
+    margin-left: 365px;
+    text-align: center;
+    align-items: center;
+}
+.barra-pesquisa {
     width: 550px;
     padding: 10px;
-    border: 2px solid #ccc; /* Adicionei 'solid' para definir o tipo de borda */
+    border: 2px solid #ccc; 
     border-radius: 40px;
     outline: none;
     font-size: 16px;
@@ -50,35 +56,35 @@ body {
     
 }
 
-.search-bar:focus {
+.pesquisa-conteiner:focus {
     border-color: #007BFF; 
 }
 
-.search-container button {
-    padding: 10px 10px; /* Ajuste o padding para tornar o botão mais compacto */
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    margin-top: 50px; /* Mantém a margem superior igual à da barra de pesquisa */
-    border: none; /* Remove a borda padrão */
-    border-radius: 0 40px 40px 0; /* Bordas arredondadas apenas à direita */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    font-size: 16px; /* Tamanho da fonte do botão */
+.pesquisa-conteiner button {
+    padding: 10px 10px; 
+    background-color: #007BFF; 
+    color: white; 
+    margin-top: 50px; 
+    border: none; 
+    border-radius: 0 40px 40px 0; 
+    cursor: pointer; 
+    font-size: 16px; 
     height: auto; 
     margin: 0;
-    border-radius: 50%; /* Mantém o arredondamento */
+    border-radius: 50%; 
     margin-top: auto;
     margin-left: 5px;
     
     
 }
 
-.search-container button img {
-    width: 15px; /* Define a largura da imagem da lupa */
-    height: auto; /* Mantém a proporção da imagem */
+.pesquisa-conteiner button img {
+    width: 15px; 
+    height: auto; 
 }
 
 
-.search-container button:hover {
+.pesquisa-conteiner button:hover {
     background-color: #0056b3; 
 }
 .lado{
@@ -97,7 +103,7 @@ p{
     margin-left: 300px ;
 }
 
-.content-pai {
+.conteiner-pai {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -109,13 +115,13 @@ p{
     box-sizing: border-box;
     text-align: center;
 }
-.content-filho {
+.conteiner-filho {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     
 }
-.card {
+.carde {
     text-align: center;
     background-image: linear-gradient(
         to bottom, 
@@ -133,11 +139,11 @@ p{
 
     
 }
-.card h1 {
+.carde h1 {
     font-size: 16px;
     margin: 0 0 10px;
 }
-.card button {
+.carde button {
     padding: 5px 10px;
     background-color: #00ff80;
     border: none;
@@ -145,22 +151,14 @@ p{
     border-radius: 5px;
     cursor: pointer;
 }
-
-
-    
-@media (max-width: 768px){ 
-    .card { width: calc(50% - 20px);} 
+.logo {
+    max-width: 100%; /* Ajusta para ocupar toda a largura disponível */
+    height: auto; 
+    margin: 0; /* Remove a margem externa */
+    border-radius: 50%; /* Mantém o arredondamento */
+    border: 3px solid #35424a; /* Borda da imagem */
+    margin-top: 20px; /* Ajusta a posição da imagem a partir do topo */
 }
-@media (max-width: 480px) { 
-    .card { width: 100%; 
-    } 
-    .content-lateral { width: 100px; 
-    } 
-    
-    .search-container { margin-left: 120px; 
-    } 
-}
-
 
     
 .titulo {
@@ -244,11 +242,11 @@ p{
     object-fit: cover; 
 }
 
-.content-lateral {
+.conteiner-lateral {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    justify-content: flex-start; /* Alinha os elementos para o topo */
+    justify-content: center; /* Alinha os elementos para o topo */
     text-align: center; 
     margin: 0; /* Remove a margem */
     padding: 0; /* Remove o padding */
@@ -258,9 +256,11 @@ p{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.44);
+    z-index: 10;
+    
 }
 
-.content-lateral img {
+.logo{
     max-width: 100%; /* Ajusta para ocupar toda a largura disponível */
     height: auto; 
     margin: 0; /* Remove a margem externa */
@@ -269,52 +269,105 @@ p{
     margin-top: 20px; /* Ajusta a posição da imagem a partir do topo */
 }
 
-.content-lateral button {
-    margin-top: 10px; 
+.card {
+    /* Estilos para cada cartão de canal */
+    display: flex; /* Alinha os elementos horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    
+    
+}
+
+.botao {
+    /* Estilos para o botão do canal */
     background-image: linear-gradient(
         to right, 
-        #a71aa7,
-        #000 100%
+        #800080 30%,
+        #000 
     );
-    padding: 10px 20px; 
-    background-color: #4CAF50; 
-    color: white; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    width: 150px; /* Largura do botão */
-    align-self: center; /* Centraliza o botão horizontalmente */
-    margin-top: 200px;
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    border-radius: 500px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor para um ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+    display: flex; /* Alinha os elementos horizontalmente dentro do botão */
+    align-items: center; /* Centraliza verticalmente dentro do botão */
+    width: auto;
+    height: 70px;
+    margin: auto;
+    margin-top: 100px;
+    border: 3px solid #35424a; 
+     
+    
+    
 }
 
-.content-lateral button:hover {
-    background-color: #45a049; 
+.botao:hover {
+    /* Estilos para o botão quando o mouse está sobre ele */
+    background-color: al; /* Cor de fundo do botão ao passar o mouse */
 }
 
-
-
-.img-adicionar {
-    width: 50px; /* Ajusta a largura do ícone */
-    height: 50px; /* Mantém a proporção */
-    margin-left: 5px; /* Espaço entre o texto e o ícone */
+.img {
+    /* Estilos para o container da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o nome do canal */
+    margin-bottom: 20px;
 }
 
-.icon-container {
+.modifica-img {
+    /* Estilos para a imagem do perfil */
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+    border-radius: 50%; /* Arredonda a imagem */
+    margin-top: 20px; 
+    
+    
+}
+.card p{
+    font-size: 20px;
+    margin-left:50px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.icone-conteiner {
     display: flex; 
     justify-content: center; 
     gap: 15px; 
     padding: 10px; 
+    margin-top: 100px;
 }
 
-.icon {
+.icone {
     width: 40px;
     height: auto; 
     cursor: pointer; 
     transition: transform 0.2s; 
 }
 
-.icon:hover {
+.icone:hover {
     transform: scale(1.1); 
 }
 
 
+@media (max-width: 768px) {
+    .conteiner-lateral {
+        display: none; /* Oculta a sidebar em telas menores */
+    }
+    .conteiner-filho {
+        flex-direction: column; /* Faz os cards quebrarem em novas linhas */
+    }
+}
+
+@media (max-width: 480px) {
+    .conteiner-lateral {
+        display: block;
+        width: 30px;  /* Largura mínima para a sidebar */
+        height: 30px; /* Altura mínima para a sidebar */
+        background-color: #ccc; /* Cor de fundo para a sidebar */
+        text-align: center;
+        line-height: 30px; /* Centraliza o texto verticalmente */
+        font-size: 20px;
+        border-radius: 15px; /* Para deixar os cantos arredondados */
+    }
+}
