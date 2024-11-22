@@ -35,12 +35,13 @@ h2 {
 input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
     border: none;
     border-radius: 5px;
 }
 
-button {
+a {
+    text-decoration: none;
     width: 100%;
     padding: 10px;
     background-color: darkgreen;
@@ -48,14 +49,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #fff;
 }
 
-button:hover {
-    background-color: rgb(255, 255, 255);
+a:hover {
+    color: #000;
+    background-color: rgb(17, 166, 0);
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
 }
 body {

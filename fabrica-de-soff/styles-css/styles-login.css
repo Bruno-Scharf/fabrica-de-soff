@@ -5,6 +5,15 @@
     font-family: Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+  text-decoration: underline;  
+}
+
 body {
     height: 100vh;
     display: flex;

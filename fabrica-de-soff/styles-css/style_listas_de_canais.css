@@ -124,7 +124,7 @@ h1,h4{
     display: flex; 
     justify-content: center; 
     gap: 15px; 
-    padding: 10px; 
+    padding-top: 10px; 
    
 }
 
